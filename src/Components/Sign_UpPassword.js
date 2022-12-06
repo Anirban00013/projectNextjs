@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import Button from "react-bootstrap/Button";
 import Sign_img from "./Sign_img";
 import { NavLink } from "react-router-dom";
@@ -36,7 +35,7 @@ const Sign_UpPassword = () => {
       alert("password length must be eight");
     } else {
       console.log("user login succesfulyy");
-      navigate("/");
+      navigate("/Home");
     }
 
     console.log("data added succesfully");

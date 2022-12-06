@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import Sign_img from "./Sign_img";
 
 const Login = () => {
-  const history = useNavigate();
+  const Navigate = useNavigate();
   const [inpval, setInpaval] = useState({
     email: "",
     password: "",
@@ -27,10 +27,8 @@ const Login = () => {
 
   const addData = (e) => {
     e.preventDefault();
-    const getuserArr = localStorage.getItem("useryoutube");
-    // const getuserArrs = localStorage.getItem("useryoutubs");
     const getuserArrer = localStorage.getItem("useryoutuber");
-    console.log(getuserArr);
+    console.log(getuserArrer);
     const { email, password } = inpval;
     if (email === "") {
       alert("email field is requred");
@@ -51,7 +49,7 @@ const Login = () => {
           alert("invalid details");
         } else {
           console.log("user login succesfulyy");
-          history("/Home");
+          Navigate("/Home");
         }
       }
     }
@@ -98,7 +96,7 @@ const Login = () => {
                   Don't have an Account?
                   <span>
                     &nbsp; &nbsp;
-                    <NavLink to="/Sign_UP">SIGNUP HERE</NavLink>
+                    <NavLink to="/Sign_UP">SIGNUP HERE!</NavLink>
                   </span>
                 </p>
               </form>

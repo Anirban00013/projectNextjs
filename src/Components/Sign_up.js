@@ -67,7 +67,7 @@ const Sign_Up = () => {
                     type="lastName"
                     name="lastName"
                     onChange={getdata}
-                    placeholder="Write Your Name"
+                    placeholder="Write Last Name"
                   />
                 </div>
                 <div className="input-box button button:hover  ">
